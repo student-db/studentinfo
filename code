@@ -1,0 +1,378 @@
+<?php  include('stuserver.php');
+if (isset($_GET['edit'])) {
+	$id = $_GET['edit'];
+	$edit_state = true;
+		$rec = mysqli_query($db, "SELECT * FROM student WHERE id=$id");
+	   $record = mysqli_fetch_array($rec);
+	    
+     $regno = $_record['regno'];
+     $name = $_record['name'];
+     $dept = $_record['dept'];
+ $admissionno = $_record['admissionno'];
+ $batch = $_record['batch'];
+ $contactno = $_record['contactno'];
+     $academicyear = $_record['academicyear'];
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>student page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<?php if (isset($_SESSION['msg'])): ?>
+                <div class="msg">
+                    <?php 
+                        echo $_SESSION['msg']; 
+                        unset($_SESSION['msg']);
+                    ?>
+                </div>
+            <?php endif ?>
+
+
+
+
+<tbody>
+ <?php while ($row = mysqli_fetch_array($results)) { ?>
+		<tr>
+			<td><?php echo $row['regno']; ?></td>
+			<td><?php echo $row['name']; ?></td>
+			<td><?php echo $row['dept']; ?></td>
+      <td><?php echo $row['admissionno']; ?></td>
+      <td><?php echo $row['batch']; ?></td>
+			<td><?php echo $row['contactno']; ?></td>
+			<td><?php echo $row['academicyear']; ?></td>
+    	<td>
+				<a href = "index.php?edit=<?php echo $row ['id']; ?>">Edit </a>
+			</td>
+			<td>
+				<a href = "server.php?del=<?php echo $row ['id']; ?>">Delete </a>
+
+			</td>
+	<?php } ?>
+	</tbody>
+
+
+<?php include'nav.php'?>
+
+<!doctype html>
+<html>
+  <head>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+    
+     #frm{
+         text-align: center;
+        
+     }
+     #frm p{
+         color :black;
+     }
+     </style>
+  </head>
+  <head>
+    
+     </head>
+     <body>
+     <div class id= "frm">
+        <form method ="POST" action ="stuserver.php">
+            <br>
+
+            <p>
+                <label>regno</label>
+                <input type = "text" id ="reg" name = "regno">
+                <br>
+            </p>
+            <p>
+                <label>name</label>
+                <input type = "text" id ="nam" name = "name">
+                <br>
+                <p>
+                <label>dept</label>
+                <input type = "text" id ="dep" name = "dept">
+                <br>
+            </p>
+            <p>
+                <label>admission no</label>
+                <input type = "number" id ="ad" name = "admissionno">
+                <br>
+                <p>
+                <label>batch</label>
+                <input type = "text" id ="bat" name = "batch">
+                <br>
+            </p>
+            <p>
+                <label>contact no</label>
+                <input type = "number" id ="con" name = "contactno">
+                <br>
+                <p>
+                <label>academic year</label>
+                <input type = "text" id ="ac" name = "academicyear">
+                <br>
+    </p>
+                <p>
+                <input type = "submit" id ="btn" value = "save" name ="save"><br>
+                       
+            </p>
+            <p>
+                <input type = "submit" id ="btn" value = "update" name ="update"><br>
+                       
+            </p>
+    </div>
+            </body>
+</html>
+
+
+
+
+
+
+
+
+<?php include'nav.php'?>
+<?php  include('stuserver.php');
+if (isset($_GET['edit'])) {
+    $id = $_GET['edit'];
+    $edit_state = true;
+		$rec = mysqli_query($db, "SELECT * FROM student WHERE id=$id");
+	   $record = mysqli_fetch_array($rec);
+	    
+     $regno = $record['regno'];
+     $name = $record['name'];
+     $dept = $record['dept'];
+ $admissionno = $record['admissionno'];
+ $batch = $record['batch'];
+ $contactno = $record['contactno'];
+     $academicyear = $record['academicyear'];
+}
+?>
+<!doctype html>
+<html>
+  <head>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+    
+     #frm{
+         text-align: center;
+        
+     }
+     #frm p{
+         color :black;
+     }
+     </style>
+  </head>
+  <head>
+    
+     </head>
+     <body><form method="post" action="stuserver.php" >
+	<input type="hidden" name="id" value="<?php echo $id; ?>">
+		<div class="input-group">
+			<label>regno</label>
+			<input type="text" name="regno" value="<?php echo $regno; ?>">
+		</div>
+		<div class="input-group">
+			<label>name</label>
+			<input type="text" name="name" value="<?php echo $name; ?>">
+		</div>
+		<div class="input-group">
+			<label>dept</label>
+			<input type="text" name="dept" value="<?php echo $dept; ?>">
+		</div>
+		<div class="input-group">
+			<label>admissionno</label>
+			<input type="number" name="admissionno" value="<?php echo $admissionno; ?>">
+            <div class="input-group">
+			<label>batch</label>
+			<input type="text" name="batch" value="<?php echo $batch; ?>">
+		</div>
+		<div class="input-group">
+			<label>contact no</label>
+			<input type="text" name="contactno" value="<?php echo $contactno; ?>">
+        </div>
+        <div class="input-group">
+			<label>academic year</label>
+			<input type="text" name="academicyear" value="<?php echo $academicyear; ?>">
+        </div>
+		<div class="input-group">
+			<?php if ($edit_state == false): ?>
+				<button class="btn" type="submit" name="save" >Save</button>
+			<?php else: ?>
+				<button class="btn" type="submit" name="update" >Update</button>
+			<?php endif ?>
+		</div>
+
+	</form>
+</body>
+</html>
+    
+
+
+
+
+    <div id ="add">
+<a class="btn btn-primary" href="stuadd.php" role="button">ADD STUDENT</a>
+</div>
+<br>
+<br>
+<?php  include('stuserver.php');
+if (isset($_GET['edit'])) {
+	$id = $_GET['edit'];
+	$edit_state = true;
+		$rec = mysqli_query($db, "SELECT * FROM student WHERE id=$id");
+	   $record = mysqli_fetch_array($rec);
+	    
+     $regno = $_record['regno'];
+     $name = $_record['name'];
+     $dept = $_record['dept'];
+ $admissionno = $_record['admissionno'];
+ $batch = $_record['batch'];
+ $contactno = $_record['contactno'];
+     $academicyear = $_record['academicyear'];
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>student page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<?php if (isset($_SESSION['msg'])): ?>
+                <div class="msg">
+                    <?php 
+                        echo $_SESSION['msg']; 
+                        unset($_SESSION['msg']);
+                    ?>
+                </div>
+            <?php endif ?>
+<div class ="table">
+<table class="table table-hover">
+<table class="table table-bordered table-hover table table-striped table-dark">
+<thead>
+    <tr>
+      <th>regno</th>
+      <th>Student name</th>
+      <th>department</th>
+      <th>admission no</th>
+      <th>batch</th>
+      <th>contact no</th>
+      <th>academic year</th>
+      <th colspan="2" >Action</th>
+
+    </tr>
+  </thead>
+  <tbody>
+ <?php while ($row = mysqli_fetch_array($results)) { ?>
+		<tr>
+			<td><?php echo $row['regno']; ?></td>
+			<td><?php echo $row['name']; ?></td>
+			<td><?php echo $row['dept']; ?></td>
+      <td><?php echo $row['admissionno']; ?></td>
+      <td><?php echo $row['batch']; ?></td>
+			<td><?php echo $row['contactno']; ?></td>
+			<td><?php echo $row['academicyear']; ?></td>
+    	<td>
+				<a href = "stuadd.php?edit=<?php echo $row ['id']; ?>">Edit </a>
+			</td>
+			<td>
+				<a href = "stuserver.php?del=<?php echo $row ['id']; ?>">Delete </a>
+
+			</td>
+	<?php } ?>
+	</tbody>
+</table>
+
+        </div>
+    
+</body>
+</html>
+
+
+<tbody>
+					<tr>
+						<td>
+							<span class="custom-checkbox">
+								<input type="checkbox" id="checkbox1" name="options[]" value="1">
+								<label for="checkbox1"></label>
+							</span>
+						</td>
+					
+							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+						</td>
+					</tr>
+
+
+                      <div class id= "frm">
+        <form method ="POST" action ="stuserver.php">
+            <br>
+
+            <p>
+                <label>regno</label>
+                <input type = "text" id ="reg" name = "regno">
+                <br>
+            </p>
+            <p>
+                <label>name</label>
+                <input type = "text" id ="nam" name = "name">
+                <br>
+                <p>
+                <label>dept</label>
+                <input type = "text" id ="dep" name = "dept">
+                <br>
+            </p>
+            <p>
+                <label>admission no</label>
+                <input type = "number" id ="ad" name = "admissionno">
+                <br>
+                <p>
+                <label>batch</label>
+                <input type = "text" id ="bat" name = "batch">
+                <br>
+            </p>
+            <p>
+                <label>contact no</label>
+                <input type = "number" id ="con" name = "contactno">
+                <br>
+                <p>
+                <label>academic year</label>
+                <input type = "text" id ="ac" name = "academicyear">
+                <br>
+    </p>
+    <?php if ($edit_state == false): ?>
+				<button class="btn" type="submit" name="save" >Save</button>
+			<?php else: ?>
+				<button class="btn" type="submit" name="update" >Update</button>
+			<?php endif ?>
+               
+    </div>
+
+
+    <label>regno</label>
+						<input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+						<label>student name</label>
+						<input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+						<label>department</label>
+						<input type="text" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>admission no</label>
+						<input type="email" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>batch</label>
+						<textarea class="form-control" required></textarea>
+					</div>
+					<div class="form-group">
+						<label>contact no</label>
+						<input type="text" class="form-control" required>
+                    </div>
+                    					
+				</div>
