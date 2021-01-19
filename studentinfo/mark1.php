@@ -43,7 +43,7 @@ ob_start();
 		{ ?>
 		
 		<tr>
-				<th>Roll No</th><th>Name</th><th> 121</th><th>301</th><th>303</th><th>305</th><th>365</th><th>Lab 1</th><th>Lab 2</th><th>Total</th>
+				<th>Roll No</th><th>Name</th><th> 121</th><th>301</th><th>303</th><th>305</th><th>365</th><th>Lab 1</th><th>Lab 2</th> 
 			</tr>
 		<?php
 			$a=$_POST['batch'];
@@ -54,7 +54,7 @@ ob_start();
 				
 
 				foreach ($e as $key) {
-					echo "<tr><td>".$key['rollno']."</td><td>".$key['name']."</td><td>".$key['sub1']."</td><td>".$key['sub2']."</td><td>".$key['sub3']."</td><td>".$key['sub4']."</td><td>".$key['sub5']."</td><td>".$key['lab1']."</td><td>".$key['lab2']."</td><td>".$key['sub1']+$key['sub1']+$key['sub2']+$key['sub3']+$key['sub4']+$key['sub5']+$key['lab1']+$key['lab2']."</td></tr>";
+					echo "<tr><td>".$key['rollno']."</td><td>".$key['name']."</td><td>".$key['sub1']."</td><td>".$key['sub2']."</td><td>".$key['sub3']."</td><td>".$key['sub4']."</td><td>".$key['sub5']."</td><td>".$key['lab1']."</td><td>".$key['lab2']."</td></tr>";
 				}
 			}else{
 				echo "<tr><td style colspan='11'><center><i>No records</i></center></td></tr>";
@@ -76,7 +76,7 @@ ob_start();
 					
 	
 					foreach ($e as $key) {
-						echo "<tr><td>".$key['rollno']."</td><td>".$key['name']."</td><td>".$key['sub1']."</td><td>".$key['sub2']."</td><td>".$key['sub3']."</td><td>".$key['sub4']."</td><td>".$key['sub5']."</td><td>".$key['lab1']."</td><td>".$key['lab2']."</td><td>".$key['sub1']+$key['sub1']+$key['sub2']+$key['sub3']+$key['sub4']+$key['sub5']+$key['lab1']+$key['lab2']."</td></tr>";
+						echo "<tr><td>".$key['rollno']."</td><td>".$key['name']."</td><td>".$key['sub1']."</td><td>".$key['sub2']."</td><td>".$key['sub3']."</td><td>".$key['sub4']."</td><td>".$key['sub5']."</td><td>".$key['lab1']."</td><td>".$key['lab2']."</td></tr>";
 						
 					}
 				}else{
