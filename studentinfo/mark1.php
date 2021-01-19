@@ -20,14 +20,14 @@ ob_start();
 	<option value="MCA2K19A">MCA2K19A</option>
 	<option value="MCA2K19B">MCA2K19B</option>
 </select>
-<th><button type="submit" name= 'batch' style="padding-left: 15px">Find Students</button></th>
+<th><button type="submit" name= 'batsearch' style="padding-left: 15px">Find Students</button></th>
 <th> </th>
 </form>
 	</th>
 	<th>
 	<form action="" method="POST" 	style="padding-left: 15px" > 
 <b>Register No:</b>
-<input type="text" name= "search" placeholder="Enter roll number">
+<input type="number" name= "search" placeholder="Enter roll number">
 <th><button type="submit" name="reg" style="padding-left: 15px">Find Students</button></th>
 
 </form>
@@ -39,7 +39,7 @@ ob_start();
 	<table style="width: 100%;table-layout: fixed;text-align: center;" class="table table-striped table-hover">
 	<?php
 		include('connection.php');
-		if(isset($_POST['batch']))
+		if(isset($_POST['batsearch']))
 		{ ?>
 		
 		<tr>
@@ -77,6 +77,7 @@ ob_start();
 	
 					foreach ($e as $key) {
 						echo "<tr><td>".$key['rollno']."</td><td>".$key['name']."</td><td>".$key['sub1']."</td><td>".$key['sub2']."</td><td>".$key['sub3']."</td><td>".$key['sub4']."</td><td>".$key['sub5']."</td><td>".$key['lab1']."</td><td>".$key['lab2']."</td><td>".$key['sub1']+$key['sub1']+$key['sub2']+$key['sub3']+$key['sub4']+$key['sub5']+$key['lab1']+$key['lab2']."</td></tr>";
+						
 					}
 				}else{
 					echo "<tr><td style colspan='11'><center><i>No records</i></center></td></tr>";
