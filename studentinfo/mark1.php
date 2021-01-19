@@ -59,7 +59,8 @@ ob_start();
 			}else{
 				echo "<tr><td style colspan='11'><center><i>No records</i></center></td></tr>";
 			}
-		}elseif(isset($_POST['reg'])){
+		}
+		if(isset($_POST['reg'])){
 			
 			?>
 		
