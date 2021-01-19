@@ -329,7 +329,7 @@ $(document).ready(function(){
 			
     	<td>
 
-		                    <a href = "studadd.php?edit=<?php echo $row ['id']; ?>" ><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+		                    <a href = "studadds.php" ><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
 							<a href = "stuserver.php?del=<?php echo $row ['id']; ?>"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
 						</td>		
 							<?php } ?>

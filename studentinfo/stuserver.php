@@ -29,19 +29,23 @@
 		header('location: student.php');
 	
 	}
-	if (isset($_POST['update'])) {
 	
-		$regno = mysqli_real_escape_string($db,$_POST['regno']);
-        $name = mysqli_real_escape_string($db,$_POST['name']);
-        $dep = mysqli_real_escape_string($db,$_POST['dep']);
-        $admissionno = mysqli_real_escape_string($db,$_POST['admissionno']);
-		$batch = mysqli_real_escape_string($db,$_POST['batch']);
-		$contactno = mysqli_real_escape_string($db,$_POST['contactno']);
-		$academicyear = mysqli_real_escape_string($db,$_POST['academicyear']);
-		$id = mysqli_real_escape_string($db,$_POST['id']);
-		
-		$query = mysqli_query($db," UPDATE `student` SET `regno`='$regno',`name`='$name',`dep`='$dep',`admissionno`='$admissionno',`contactno`='$contactno',`batch`= '$batch',`academicyear`= '$academic_year' WHERE `id` = $id");
-	
+	if (isset($_GET['del'])) {
+	//echo "string";
+	    $regno = $_POST['regno'];
+        $name = $_POST['name'];
+        $dept = $_POST['dept'];
+		$admissionno = $_POST['admissionno'];
+		$batch = $_POST['batch'];
+		$contactno = $_POST['contactno'];
+        $academicyear = $_POST['academicyear'];
+        $q = "UPDATE `student` SET `regno`='$regno',`name`='$name',`dept`='$dept',`admissionno`='$admissionno',`contactno`='$contactno' WHERE`regno`='$regno'";
+        
+        $e=mysqli_query($con,$q);
+        if ($e) {
+        	echo "<script>alert('Updated');window.location.href='student.php';</script>";
+        }
+
 		$_SESSION['msg'] = "Address update"; 
 		header('location: student.php');
 	

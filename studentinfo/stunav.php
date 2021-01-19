@@ -66,18 +66,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<a href="#" class="effect-3">Home</a>
 								</li>
 								<li>
-									<a href="student.php" class="effect-3">STUDENT</a>
+									<a href="stu1.php" class="effect-3">STUDENT</a>
 								</li>
 								<li>
-									<a href="atten.php" class="effect-3">ATTENDENCE</a>
+									<a href="atten1.php" class="effect-3">ATTENDENCE</a>
 								</li>
 								<li>
-									<a href="join.html" class="effect-3">MARK</a>
-								</li>
-								<li>
-									<a href="join.html" class="effect-3">PARENT INFO</a>
+									<a href="mark1.php" class="effect-3">MARK</a>
 								</li>
 								
+								<li>
+									<a href="courses1.php" class="effect-3">Courses</a>
+								</li>
+								
+                        
+                        <li >
+                            <a class="effect-3" href="logout.php">Logout</a>
+                        </li>
+ 
 								
 							</ul>
 						</nav>

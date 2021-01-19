@@ -63,9 +63,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li class="active">
 									<a href="index.html" class="effect-3">Home</a>
 								</li>
-								<li>
-									<a href="about.html" class="effect-3">About Us</a>
-								</li>
+								
 								
 								<li class="dropdown">
 									<a href="" class="dropdown-toggle" data-toggle="dropdown">LOGIN
@@ -76,7 +74,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<a href="admlogin.php">ADMIN LOGIN</a>
 										</li>
 										<li>
-											<a href="stulogin.html">STUDENT LOGIN</a>
+											<a href="studlog.php">STUDENT LOGIN</a>
 										</li>
 									</ul>
 								</li>

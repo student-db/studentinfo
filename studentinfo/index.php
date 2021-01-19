@@ -1,4 +1,6 @@
-<?php include 'banner.php' ?>
+<?php include 'banner.php' ;
+ob_start();
+?>
 
 	<div class="banner-bottom-w3l" id="about">
 		<div class="container">
@@ -15,10 +17,8 @@
 					<h4>About
 						<span>Best Study</span>
 					</h4>
-					<p>Lorem Ipsum convallis diam consequat magna vulputate malesuada. Cras a ornare elit, Nulla viverra pharetra sem eget.</p>
-					<p>Pellentesque convallis diam consequat magna vulputate malesuada. Cras a ornare elit. Nulla viverra pharetra sem, eget
-						pulvinar neque pharetra ac.Lorem Ipsum convallis diam consequat magna vulputate malesuada. Cras a ornare elit. Nulla
-						viverra pharetra sem.</p>
+					<p>T K M College of Engineering, the  first Government- aided engineering college in Kerala, is situated in the cashew hub of Kerala, City of Kollam.</p>
+					<p>TKM College of Engineering, organized the International Conference on Microelectronics, Signals and Systems(ICMSS-2019) on the 28th and 29th of September 2019 as the first event in connection the Diamond Jubilee Celebrations. This truly unique programme was organised  with support from SIBCA Electronic Equipment, Dubai in association with the American Institute of Physics </p>
 				</div>
 				<!-- Stats-->
 				<div class="col-md-6 stats-info-agile">
@@ -66,21 +66,21 @@
 					<div class="servi-shadow">
 						<span class="fa fa-bullhorn icon" aria-hidden="true"></span>
 						<h4>Popular Courses</h4>
-						<p>Phasellus at placerat ante nulla adipiscing elit</p>
+						<p></p>
 					</div>
 				</div>
 				<div class="col-xs-4 services-grids-w3l">
 					<div class="servi-shadow">
 						<span class="fa fa-certificate icon" aria-hidden="true"></span>
 						<h4>Certification</h4>
-						<p>Phasellus at placerat ante nulla adipiscing elit</p>
+						<p></p>
 					</div>
 				</div>
 				<div class="col-xs-4 services-grids-w3l">
 					<div class="servi-shadow">
 						<span class="fa fa-book icon" aria-hidden="true"></span>
 						<h4>Book Library</h4>
-						<p>Phasellus at placerat ante nulla adipiscing elit</p>
+						<p></p>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -90,21 +90,21 @@
 					<div class="servi-shadow">
 						<span class="fa fa-users icon" aria-hidden="true"></span>
 						<h4>Best Teachers</h4>
-						<p>Phasellus at placerat ante nulla adipiscing elit</p>
+						<p></p>
 					</div>
 				</div>
 				<div class="col-xs-4 services-grids-w3l">
 					<div class="servi-shadow">
 						<span class="fa fa-bus icon" aria-hidden="true"></span>
 						<h4>Transport Facility</h4>
-						<p>Phasellus at placerat ante nulla adipiscing elit</p>
+						<p></p>
 					</div>
 				</div>
 				<div class="col-xs-4 services-grids-w3l">
 					<div class="servi-shadow">
 						<span class="fa fa-laptop icon" aria-hidden="true"></span>
 						<h4>Excellent Lab</h4>
-						<p>Phasellus at placerat ante nulla adipiscing elit</p>
+						<p></p>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -129,26 +129,26 @@
 					<div class="col-md-6 yaallahaa-news-left">
 						<div class="col-xs-6 news-left-img">
 							<div class="news-left-text color-event1">
-								<h5>20 Dec</h5>
+								<h5></h5>
 							</div>
 						</div>
 						<div class="col-xs-6 news-grid-info-bottom-w3ls">
 							<div class="news-left-top-text text-color1">
-								<a href="#" data-toggle="modal" data-target="#myModal">Integer viverra eleifend neque</a>
+								<a href="#" data-toggle="modal" data-target="#myModal"></a>
 							</div>
 							<div class="date-grid">
 								<div class="admin">
 									<a href="#">
-										<span class="fa fa-clock-o" aria-hidden="true"></span> 7:00 pm - 9:00 pm</a>
+										<span class="fa fa-clock-o" aria-hidden="true"></span> </a>
 								</div>
 								<div class="time">
 									<p>
-										<span class="fa fa-map-marker" aria-hidden="true"></span> Newyork City, 2589</p>
+										<span class="fa fa-map-marker" aria-hidden="true"></span></p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
 							<div class="news-grid-info-bottom-w3ls-text">
-								<p>Aliquam erat volutpat. Duis vulputate tempus laoreet.</p>
+								<p></p>
 							</div>
 						</div>
 						<div class="clearfix"> </div>
@@ -156,26 +156,26 @@
 					<div class="col-md-6 yaallahaa-news-left">
 						<div class="col-xs-6 news-left-img news-left-img1">
 							<div class="news-left-text color-event2">
-								<h5>27 Dec</h5>
+								<h5></h5>
 							</div>
 						</div>
 						<div class="col-xs-6 news-grid-info-bottom-w3ls">
 							<div class="news-left-top-text text-color2">
-								<a href="#" data-toggle="modal" data-target="#myModal">Integer viverra eleifend neque</a>
+								<a href="#" data-toggle="modal" data-target="#myModal"></a>
 							</div>
 							<div class="date-grid">
 								<div class="admin">
 									<a href="#">
-										<span class="fa fa-clock-o" aria-hidden="true"></span> 6:00 am - 8:00 am</a>
+										<span class="fa fa-clock-o" aria-hidden="true"></span> </a>
 								</div>
 								<div class="time">
 									<p>
-										<span class="fa fa-map-marker" aria-hidden="true"></span> Newyork City, 1452</p>
+										<span class="fa fa-map-marker" aria-hidden="true"></span></p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
 							<div class="news-grid-info-bottom-w3ls-text">
-								<p>Aliquam erat volutpat. Duis vulputate tempus laoreet.</p>
+								<p></p>
 							</div>
 						</div>
 						<div class="clearfix"> </div>
@@ -186,26 +186,26 @@
 					<div class="col-md-6 yaallahaa-news-left">
 						<div class="col-xs-6 news-left-img news-left-img2">
 							<div class="news-left-text color-event3">
-								<h5>28 Dec</h5>
+								<h5></h5>
 							</div>
 						</div>
 						<div class="col-xs-6 news-grid-info-bottom-w3ls">
 							<div class="news-left-top-text text-color3">
-								<a href="#" data-toggle="modal" data-target="#myModal">Integer viverra eleifend neque</a>
+								<a href="#" data-toggle="modal" data-target="#myModal"></a>
 							</div>
 							<div class="date-grid">
 								<div class="admin">
 									<a href="#">
-										<span class="fa fa-clock-o" aria-hidden="true"></span> 10:00 am - 1:00 pm</a>
+										<span class="fa fa-clock-o" aria-hidden="true"></span> </a>
 								</div>
 								<div class="time">
 									<p>
-										<span class="fa fa-map-marker" aria-hidden="true"></span> Newyork City, 7458</p>
+										<span class="fa fa-map-marker" aria-hidden="true"></span></p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
 							<div class="news-grid-info-bottom-w3ls-text">
-								<p>Aliquam erat volutpat. Duis vulputate tempus laoreet.</p>
+								<p></p>
 							</div>
 						</div>
 						<div class="clearfix"> </div>
@@ -218,21 +218,21 @@
 						</div>
 						<div class="col-xs-6 news-grid-info-bottom-w3ls">
 							<div class="news-left-top-text text-color4">
-								<a href="#" data-toggle="modal" data-target="#myModal">Integer viverra eleifend neque</a>
+								<a href="#" data-toggle="modal" data-target="#myModal"></a>
 							</div>
 							<div class="date-grid">
 								<div class="admin">
 									<a href="#">
-										<span class="fa fa-clock-o" aria-hidden="true"></span> 7:00 pm - 9:00 pm</a>
+										<span class="fa fa-clock-o" aria-hidden="true"></span></a>
 								</div>
 								<div class="time">
 									<p>
-										<span class="fa fa-map-marker" aria-hidden="true"></span> Newyork City, 786.</p>
+										<span class="fa fa-map-marker" aria-hidden="true"></span></p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
 							<div class="news-grid-info-bottom-w3ls-text">
-								<p>Aliquam erat volutpat. Duis vulputate tempus laoreet.</p>
+								<p></p>
 							</div>
 						</div>
 						<div class="clearfix"> </div>
@@ -271,42 +271,7 @@
 	<!-- middle section -->
 	<div class="middle-sec-agile">
 		<div class="container">
-			<h4>Our
-				<span>Best Study</span> Institute</h4>
-			<ul>
-				<li>
-					<div class="midle-left-w3l">
-						<span class="fa fa-check" aria-hidden="true"></span>
-					</div>
-					<div class="middle-right">
-						<h5>Select A Course You Like And Explore It!</h5>
-						<p>Integer eu facilisis nunc, a iaculis felis.</p>
-					</div>
-					<div class="clearfix"></div>
-				</li>
-				<li>
-					<div class="midle-left-w3l">
-						<span class="fa fa-check" aria-hidden="true"></span>
-					</div>
-					<div class="middle-right">
-						<h5>Join A Seminar To Know More About It!</h5>
-						<p>Integer eu facilisis nunc, a iaculis felis.</p>
-					</div>
-					<div class="clearfix"></div>
-				</li>
-				<li>
-					<div class="midle-left-w3l">
-						<span class="fa fa-check" aria-hidden="true"></span>
-					</div>
-					<div class="middle-right">
-						<h5>Get Enrolled And Start Better Future With Us!</h5>
-						<p>Integer eu facilisis nunc, a iaculis felis.</p>
-					</div>
-					<div class="clearfix"></div>
-				</li>
-			</ul>
-		
-		</div>
+			
 		<div class="pencil-img">
 			<img src="images/bg5.png" alt="" />
 		</div>

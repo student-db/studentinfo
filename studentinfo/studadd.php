@@ -63,10 +63,10 @@ if (isset($_GET['edit'])) {
 				
 				<div class="modal-footer">
                 <?php if ($edit_state == false): ?>
-                    <input type="submit" class="btn btn-success" name = "save" value="Add">
+                    <input type="submit" class="btn btn-success" name = "save" value="add">
                    
                     <?php else: ?>
-                        <input type="submit" class="btn btn-default" value="update" name="update">
+                        <input type="submit" class="btn btn-default" value="update" name="">
                         
                     <?php endif ?>
 				</div>

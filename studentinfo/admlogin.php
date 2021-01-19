@@ -40,18 +40,18 @@
 						<input type="password" class="password" name="ad_pass" >
 					</div>
 					<label class="anim">
-						<input type="checkbox" class="checkbox">
-						<span> Remember me ?</span>
+						
+						<span></span>
 					</label>
 					<div class="login-agileits-bottom wthree">
 						<h6>
-							<a href="#">Forgot password?</a>
+							<a href="#"></a>
 						</h6>
 					</div>
 					<input type="submit" value="Login">
 					<div class="register-forming">
-						<p>To Register New Account --
-							<a href="register.html">Click Here</a>
+						<p>
+							<a href="register.html"></a>
 						</p>
 					</div>
 				</form>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -33,6 +34,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="header-top">
 		<div class="container">
 			
+				<div class="header-top-righ">
+					
 				<div class="clearfix"> </div>
 			</div>
 			<div class="clearfix"> </div>
@@ -61,94 +64,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<nav class="link-effect-2" id="link-effect-2">
 							<ul class="nav navbar-nav">
 								<li class="active">
-									<a href="#" class="effect-3">Home</a>
+									<a href="index.php" class="effect-3">Home</a>
 								</li>
 								<li>
 									<a href="student.php" class="effect-3">STUDENT</a>
 								</li>
 								<li>
-									<a href="join.html" class="effect-3">ATTENDENCE</a>
+									<a href="atten.php" class="effect-3">ATTENDENCE</a>
 								</li>
 								<li>
-									<a href="join.html" class="effect-3">MARK</a>
-								</li>
-								<li>
-									<a href="join.html" class="effect-3">PARENT INFO</a>
+									<a href="mark.php" class="effect-3">MARK</a>
 								</li>
 								
+								<li>
+									<a href="courses.php" class="effect-3">Courses</a>
+								</li>
+								
+                        
+                        <li >
+                            <a class="effect-3" href="logout.php">Logout</a>
+                        </li>
+ 
 								
 							</ul>
 						</nav>
 					</div>
-                    <!--/.navbar-collapse-->
-                    
+					<!--/.navbar-collapse-->
 					<!--/.navbar-->
 				</div>
 			</nav>
 		</div>
-	</div>
-	<!-- banner -->
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<!-- Indicators -->
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="a1" class=""></li>
-			<li data-target="#myCarousel" data-slide-to="2" class=""></li>
-			<li data-target="#myCarousel" data-slide-to="3" class=""></li>
-		</ol>
-		<div class="carousel-inner" role="listbox">
-			<div class="item active">
-				<div class="container">
-					<div class="carousel-caption">
-						<h6></h6>
-						<h3>
-							<span></span>
-						</h3>
-						<p></p>
-					</div>
-				</div>
-			</div>
-			<div class="item item2">
-				<div class="container">
-					<div class="carousel-caption">
-						<h6></h6>
-						<h3>
-							<span></span>
-						</h3>
-						<p></p>
-					</div>
-				</div>
-			</div>
-			<div class="item item3">
-				<div class="container">
-					<div class="carousel-caption">
-						<h6></h6>
-						<h3>
-							<span></span> </h3>
-						<p></p>
-					</div>
-				</div>
-			</div>
-			<div class="item item4">
-				<div class="container">
-					<div class="carousel-caption">
-						<h6></h6>
-						<h3>
-							<span></span>
-						</h3>
-						<p></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-			<span class="fa fa-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-			<span class="fa fa-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-		<!-- The Modal -->
-	</div>
-
+    </div>
+    
