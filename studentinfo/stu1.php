@@ -296,14 +296,14 @@ $(document).ready(function(){
     <br/>
 	<div class="row justify-content-center">
                         <div class="col-12 col-md-10 col-lg-8">
-                            <form class="card card-sm">
+                            <form class="card card-sm" method="POST">
                                 <div class="card-body row no-gutters align-items-center">
                                     <div class="col-auto">
                                         <i class="fas fa-search h4 text-body"></i>
                                     </div>
                                     <!--end of col-->
                                     <div class="col">
-                                        <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords">
+                                        <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords" name="reg">
                                     </div>
                                     <!--end of col-->
                                     <div class="col-auto">
@@ -344,22 +344,34 @@ $(document).ready(function(){
 					
 					</tr>
 </thead>
-						
-						<?php while ($row = mysqli_fetch_array($results)) { ?>
-							<tr>
-			<td><?php echo $row['regno']; ?></td>
-			<td><?php echo $row['name']; ?></td>
-			<td><?php echo $row['dept']; ?></td>
-      <td><?php echo $row['admissionno']; ?></td>
-      <td><?php echo $row['batch']; ?></td>
-			<td><?php echo $row['contactno']; ?></td>
-			<td><?php echo $row['academicyear']; ?></td>
-			
-    	<td>
-
-		                    
-						</td>		
-							<?php } ?>
+			<?php if(isset($_POST['submit'])){
+				$reg= $_POST['reg'];
+				$q="SELECT * FROM `student` WHERE `regno`='$reg'";
+				$fetch = mysqli_query($db,$q);
+				while ($row = mysqli_fetch_array($fetch)) { ?>
+					<tr>
+						<td><?php echo $row['regno']; ?></td>
+						<td><?php echo $row['name']; ?></td>
+						<td><?php echo $row['dept']; ?></td>
+						  <td><?php echo $row['admissionno']; ?></td>
+						  <td><?php echo $row['batch']; ?></td>
+						<td><?php echo $row['contactno']; ?></td>
+						<td><?php echo $row['academicyear']; ?></td>
+						<td></td>		
+		<?php }
+			}else{
+				while ($row = mysqli_fetch_array($results)) { ?>
+					<tr>
+						<td><?php echo $row['regno']; ?></td>
+						<td><?php echo $row['name']; ?></td>
+						<td><?php echo $row['dept']; ?></td>
+						  <td><?php echo $row['admissionno']; ?></td>
+						  <td><?php echo $row['batch']; ?></td>
+						<td><?php echo $row['contactno']; ?></td>
+						<td><?php echo $row['academicyear']; ?></td>
+						<td></td>		
+		<?php }
+			} ?>			
 							
 					</tr> 
 				</tbody>

@@ -58,5 +58,5 @@
 		header('location: student.php');
 	}
 
-	$results = mysqli_query($db,"SELECT * FROM STUDENT");
+	$results = mysqli_query($db,"SELECT * FROM STUDENT ");
 ?>
