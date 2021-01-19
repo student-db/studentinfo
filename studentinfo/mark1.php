@@ -13,7 +13,7 @@ ob_start();
  
 <table >
 	<th>
-	<form action="mark1.php" method="POST" style="padding-left: 15px">
+	<form action="" method="POST" style="padding-left: 15px">
 <b>Batch:</b>
 <select name="batch">
 	<option>------Batch------</option>
@@ -25,7 +25,7 @@ ob_start();
 </form>
 	</th>
 	<th>
-	<form action="mark1.php" method="POST" 	style="padding-left: 15px" > 
+	<form action="" method="POST" 	style="padding-left: 15px" > 
 <b>Register No:</b>
 <input type="text" name= "search" placeholder="Enter roll number">
 <th><button type="submit" name="reg" style="padding-left: 15px">Find Students</button></th>

@@ -365,8 +365,8 @@ $(document).ready(function(){
 						<td><?php echo $row['regno']; ?></td>
 						<td><?php echo $row['name']; ?></td>
 						<td><?php echo $row['dept']; ?></td>
-						  <td><?php echo $row['admissionno']; ?></td>
-						  <td><?php echo $row['batch']; ?></td>
+						<td><?php echo $row['admissionno']; ?></td>
+						<td><?php echo $row['batch']; ?></td>
 						<td><?php echo $row['contactno']; ?></td>
 						<td><?php echo $row['academicyear']; ?></td>
 						<td></td>		
