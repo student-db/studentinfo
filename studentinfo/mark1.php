@@ -43,18 +43,18 @@ ob_start();
 		{ ?>
 		
 		<tr>
-				<th>Roll No</th><th>Name</th><th> 121</th><th>301</th><th>303</th><th>305</th><th>365</th><th>Lab 1</th><th>Lab 2</th> 
+				<th>Roll No</th><th>Name</th><th> 121</th><th>301</th><th>303</th><th>305</th><th>365</th><th>Lab 1</th><th>Lab 2</th><th>Total</th>
 			</tr>
 		<?php
 			$a=$_POST['batch'];
 
-				$q=("SELECT `id`, `rollno`, `name`, `sub1`, `sub2`, `sub3`, `sub4`, `sub5`, `lab1`, `lab2` FROM `marks` WHERE `batch`='$a'");
+				$q=("SELECT `id`, `rollno`, `name`, `sub1`, `sub2`, `sub3`, `sub4`, `sub5`, `lab1`, `lab2`,`tot` FROM `marks` WHERE `batch`='$a'");
             $e=mysqli_query($con,$q);
             if($e){
 				
 
 				foreach ($e as $key) {
-					echo "<tr><td>".$key['rollno']."</td><td>".$key['name']."</td><td>".$key['sub1']."</td><td>".$key['sub2']."</td><td>".$key['sub3']."</td><td>".$key['sub4']."</td><td>".$key['sub5']."</td><td>".$key['lab1']."</td><td>".$key['lab2']."</td></tr>";
+					echo "<tr><td>".$key['rollno']."</td><td>".$key['name']."</td><td>".$key['sub1']."</td><td>".$key['sub2']."</td><td>".$key['sub3']."</td><td>".$key['sub4']."</td><td>".$key['sub5']."</td><td>".$key['lab1']."</td><td>".$key['lab2']."</td><td>".$key['tot']."</td></tr>";
 				}
 			}else{
 				echo "<tr><td style colspan='11'><center><i>No records</i></center></td></tr>";
@@ -70,13 +70,13 @@ ob_start();
 			<?php
 				$roll =$_POST['search'];
 	
-					$q=("SELECT `id`, `rollno`, `name`, `sub1`, `sub2`, `sub3`, `sub4`, `sub5`, `lab1`, `lab2` FROM `marks` WHERE `rollno` = $roll");
+					$q=("SELECT `id`, `rollno`, `name`, `sub1`, `sub2`, `sub3`, `sub4`, `sub5`, `lab1`, `lab2`,`tot` FROM `marks` WHERE `rollno` = $roll");
 				$e=mysqli_query($con,$q);
 				if($e){
 					
 	
 					foreach ($e as $key) {
-						echo "<tr><td>".$key['rollno']."</td><td>".$key['name']."</td><td>".$key['sub1']."</td><td>".$key['sub2']."</td><td>".$key['sub3']."</td><td>".$key['sub4']."</td><td>".$key['sub5']."</td><td>".$key['lab1']."</td><td>".$key['lab2']."</td></tr>";
+						echo "<tr><td>".$key['rollno']."</td><td>".$key['name']."</td><td>".$key['sub1']."</td><td>".$key['sub2']."</td><td>".$key['sub3']."</td><td>".$key['sub4']."</td><td>".$key['sub5']."</td><td>".$key['lab1']."</td><td>".$key['lab2']."</td><td>".$key['tot']."</td></tr>";
 						
 					}
 				}else{
