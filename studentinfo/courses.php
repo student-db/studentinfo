@@ -23,7 +23,7 @@ th, td {
 <div style="float: left">
      <table style="width: 40%;table-layout: fixed;text-align: center;position: absolute;left: 20%" class="table table-striped table-hover">
      	<tr>
-     		<th>Corse Code</th><th>Course Name</th><th>Actions</th>
+     		<th>Corse Code</th><th>Course Name</th>
      	</tr>
      	<?php include 'connection.php';
 

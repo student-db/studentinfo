@@ -14,6 +14,14 @@
 	<option value="MCA2K19B">MCA2K19B</option>
 </select>
 <input type="submit" value="Find Students">
+<th>
+	<form action="" method="POST" 	style="padding-left: 15px" > 
+<b>Register No:</b>
+<input type="number" name= "search" placeholder="Enter roll number">
+<th><button type="submit" name="reg" style="padding-left: 15px">Find Students</button></th>
+
+</form>
+	</th>
 <a href="addmark.php" style="position: absolute;right: 50px" class="btn btn-success">Add Marks</a>
 </form>
 <div>
@@ -42,11 +50,32 @@
             	echo "<tr><td style colspan='11'><center><i>No records</i></center></td></tr>";
             }
 
- 	        
+			if(isset($_POST['reg'])){
+			
+				?>
+			
+				
+				<?php
+					$roll =$_POST['search'];
+		
+						$q=("SELECT `id`, `rollno`, `name`, `sub1`, `sub2`, `sub3`, `sub4`, `sub5`, `lab1`, `lab2`,`tot` FROM `marks` WHERE `rollno` = $roll");
+					$e=mysqli_query($con,$q);
+					if($e){
+						
+		
+						foreach ($e as $key) {
+							echo "<tr><td>".$key['rollno']."</td><td>".$key['name']."</td><td>".$key['sub1']."</td><td>".$key['sub2']."</td><td>".$key['sub3']."</td><td>".$key['sub4']."</td><td>".$key['sub5']."</td><td>".$key['lab1']."</td><td>".$key['lab2']."</td><td>".$key['tot']."</td><td><a href='mark.php?del=".$key['rollno']."' class='btn btn-danger' style='color:white;'>Delete</a></td></tr>";
+							
+						}
+					}else{
+						echo "<tr><td style colspan='11'><center><i>No records</i></center></td></tr>";
+					}
+			}
+				?>
 
 
 
-			?>
+			
 		</table>
 	</div>
 </div>

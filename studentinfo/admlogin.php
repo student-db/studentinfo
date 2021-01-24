@@ -1,4 +1,4 @@
-<?php include'nav.php'?>
+<?php include'nav1.php'?>
 	<!-- banner -->
 	<div class="inner_page_agile">
 
