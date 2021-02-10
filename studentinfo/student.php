@@ -327,6 +327,7 @@ $(document).ready(function(){
 						<a href="studadd.php" class="btn btn-success"><i class="material-icons">&#xE147;</i> <span>Add New student</span></a>
 								
 					</div>
+					
 				</div>
 			</div>
 			<table class="table table-striped table-hover">
@@ -397,6 +398,10 @@ $(document).ready(function(){
 			</div>
 		</div>
 	</div>        
+</div>
+<div class = "text-center">
+<button onclick = "window.print()"  class ="btn btn-primary"> Print </button>
+
 </div>
 <!-- Edit Modal HTML -->
 

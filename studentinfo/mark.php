@@ -79,6 +79,10 @@
 		</table>
 	</div>
 </div>
+<div class = "text-center">
+<button onclick = "window.print()"  class ="btn btn-primary"> Print </button>
+
+</div>
 </body>
 </html>
 

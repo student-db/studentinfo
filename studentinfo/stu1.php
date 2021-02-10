@@ -391,6 +391,10 @@ $(document).ready(function(){
 		</div>
 	</div>        
 </div>
+<div class = "text-center">
+<button onclick = "window.print()"  class ="btn btn-primary"> Print </button>
+
+</div>
 <!-- Edit Modal HTML -->
 
 <!-- Edit Modal HTML -->
