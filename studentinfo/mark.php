@@ -5,6 +5,11 @@
 	<link href="css/c.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+	<style>
+		.btn-primary{
+			margin-left: 250px;
+		}
+		</style>
 	<?php include('nav.php');?>
  <form action="mark.php" method="POST" style="padding-left: 10%">
 <b>Batch:</b>
@@ -20,9 +25,12 @@
 <input type="number" name= "search" placeholder="Enter roll number">
 <th><button type="submit" name="reg" style="padding-left: 15px">Find Students</button></th>
 
+<button onclick = "window.print()"  class ="btn btn-primary"> PRINT </button>
+<a href="addmark.php" style="position: absolute;right: 50px" class="btn btn-success">Add Marks</a>
 </form>
 	</th>
-<a href="addmark.php" style="position: absolute;right: 50px" class="btn btn-success">Add Marks</a>
+
+
 </form>
 <div>
 	<div  style="padding-left: 10%;padding-top: 30px;padding-right: 10%;">
@@ -79,10 +87,7 @@
 		</table>
 	</div>
 </div>
-<div class = "text-center">
-<button onclick = "window.print()"  class ="btn btn-primary"> Print </button>
 
-</div>
 </body>
 </html>
 

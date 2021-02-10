@@ -10,6 +10,9 @@ ob_start();
   border: 1px solid black;
   border-collapse: collapse;
 }
+.text-center{
+	margin-left: 850px;
+}
 th, td {
   padding: 15px;text-align: center;
 }td,th{border: 1px solid black}
@@ -41,10 +44,13 @@ foreach ($e as $data)
 <b>Date:</b>
 <input type="date" name="day">
 <input type="submit" value="Search" class="btn btn-success">
+<div class = "text-center">
+<button onclick = "window.print()"  class ="btn btn-primary"> PRINT </button>
 
+</div>
 
 </form>
-<a href="addattendance.php" style="position: absolute;right: 50px"></a>
+
 <div>
 	<div  style="padding-left: 10%;padding-top: 30px;padding-right: 10%;">
 		<table style="width: 100%;table-layout: fixed;text-align: center;"class="table table-striped table-hover" >
@@ -76,10 +82,7 @@ foreach ($e as $data)
 		</table>
 	</div>
 </div>
-<div class = "text-center">
-<button onclick = "window.print()"  class ="btn btn-primary"> Print </button>
 
-</div>
 </body>
 </html>
 

@@ -37,6 +37,9 @@ body {
 	font-family: 'Varela Round', sans-serif;
 	font-size: 13px;
 }
+.text-center{
+	margin-left: 450px;
+}
 .table-responsive {
     margin: 30px 0;
 }
@@ -309,6 +312,7 @@ $(document).ready(function(){
                                     <div class="col-auto">
                                         <button class="btn btn-lg btn-success" type="submit" name = 'submit'>Search</button>
                                     </div>
+
                                     <!--end of col-->
                                 </div>
                             </form>
@@ -325,6 +329,10 @@ $(document).ready(function(){
 					<div class="col-sm-6">
 						<h2>Student <b>Details</b></h2>
 					</div>
+					<div class = "text-center">
+<button onclick = "window.print()"  class ="btn btn-primary"> PRINT </button>
+
+</div>
 					<div class="col-sm-6">
 					
 								
@@ -391,10 +399,7 @@ $(document).ready(function(){
 		</div>
 	</div>        
 </div>
-<div class = "text-center">
-<button onclick = "window.print()"  class ="btn btn-primary"> Print </button>
 
-</div>
 <!-- Edit Modal HTML -->
 
 <!-- Edit Modal HTML -->

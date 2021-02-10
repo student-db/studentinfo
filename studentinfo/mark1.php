@@ -9,18 +9,25 @@ ob_start();
 	<link href="css/c.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	
+<style>
+.btn-success{
+	margin-left: 10px;
+}
+
+</style>	
  
 <table >
+	
 	<th>
 	<form action="" method="POST" style="padding-left: 15px">
+	<button onclick = "window.print()"  class ="btn btn-primary"> PRINT </button>
 <b>Batch:</b>
 <select name="batch">
 	<option>------Batch------</option>
 	<option value="MCA2K19A">MCA2K19A</option>
 	<option value="MCA2K19B">MCA2K19B</option>
 </select>
-<th><button type="submit" name= 'batsearch' style="padding-left: 15px">Find Students</button></th>
+<th><button type="submit" name= 'batsearch' style="padding-left: 15px" class="btn btn-success" >Find Students</button></th>
 <th> </th>
 </form>
 	</th>
@@ -28,7 +35,7 @@ ob_start();
 	<form action="" method="POST" 	style="padding-left: 15px" > 
 <b>Register No:</b>
 <input type="number" name= "search" placeholder="Enter roll number">
-<th><button type="submit" name="reg" style="padding-left: 15px">Find Students</button></th>
+<th><button type="submit" name="reg" style="padding-left: 15px" class="btn btn-success"  >Find Students</button></th>
 
 </form>
 	</th>
@@ -87,10 +94,7 @@ ob_start();
 		</table>
 	</div>
 </div>
-<div class = "text-center">
-<button onclick = "window.print()"  class ="btn btn-primary"> Print </button>
 
-</div>
 </body>
 </html>
 

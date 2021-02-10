@@ -325,7 +325,7 @@ $(document).ready(function(){
 					</div>
 					<div class="col-sm-6">
 						<a href="studadd.php" class="btn btn-success"><i class="material-icons">&#xE147;</i> <span>Add New student</span></a>
-								
+						<button onclick = "window.print()"  class ="btn btn-primary"> PRINT </button>		
 					</div>
 					
 				</div>
@@ -399,10 +399,7 @@ $(document).ready(function(){
 		</div>
 	</div>        
 </div>
-<div class = "text-center">
-<button onclick = "window.print()"  class ="btn btn-primary"> Print </button>
 
-</div>
 <!-- Edit Modal HTML -->
 
 <!-- Edit Modal HTML -->
