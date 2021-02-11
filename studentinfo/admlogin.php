@@ -22,7 +22,7 @@
 			<div class="title-div">
 				<h3 class="tittle">
 					<span>A</span>dmin
-					<span>F</span>orm
+					<span>L</span>ogin
 				</h3>
 				<div class="tittle-style">
 

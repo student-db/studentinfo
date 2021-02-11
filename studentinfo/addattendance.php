@@ -40,7 +40,8 @@ foreach ($e as $data)
 	<option value="MCA2K19A">MCA2K19A</option>
 	<option value="MCA2K19B">MCA2K19B</option>
 </select>
-<input type="submit" value="Find Students">
+<input type="submit" class="btn btn-success" value="Find Students">
+<input type="submit" class="btn btn-success" value="Add Attendance" name="addatten" style="position: absolute;right: 50px">
 </form>
 <div>
 	<form action="addatten.php?" method="POST" style="padding-left: 10%;padding-top: 30px;padding-right: 10%;">
@@ -82,7 +83,7 @@ foreach ($e as $data)
 
 			?>
 		</table>
-		<input type="submit" value="Add Attendance" name="addatten" style="position: absolute;right: 50px">
+		
 	</form>
 </div>
 

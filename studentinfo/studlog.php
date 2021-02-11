@@ -39,9 +39,7 @@
 						<p>Password</p>
 						<input type="password" class="password" name="stud_pass" >
 					</div>
-					<label class="anim">
-						<input type="checkbox" class="checkbox">
-						<span></span>
+					
 					</label>
 					<div class="login-agileits-bottom wthree">
 						<h6>

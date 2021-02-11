@@ -18,12 +18,12 @@
 	<option value="MCA2K19A">MCA2K19A</option>
 	<option value="MCA2K19B">MCA2K19B</option>
 </select>
-<input type="submit" value="Find Students">
+<input type="submit" class = "btn btn-success"value="Find Students">
 <th>
 	<form action="" method="POST" 	style="padding-left: 15px" > 
 <b>Register No:</b>
 <input type="number" name= "search" placeholder="Enter roll number">
-<th><button type="submit" name="reg" style="padding-left: 15px">Find Students</button></th>
+<th><button type="submit" name="reg" class = "btn btn-success"style="padding-left: 15px">Find Students</button></th>
 
 <button onclick = "window.print()"  class ="btn btn-primary"> PRINT </button>
 <a href="addmark.php" style="position: absolute;right: 50px" class="btn btn-success">Add Marks</a>
